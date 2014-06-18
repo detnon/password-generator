@@ -1,3 +1,8 @@
+#
+# => Password generator
+# => By Sam 'phantomofthesoup' Detnon
+#
+
 
 PHRASES = %w( zh aw oo ow oi nk ng wh th sh ch str a e i o u ! % & £ $ )
 
