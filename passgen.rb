@@ -5,10 +5,9 @@
 
 class Password
 
-	PHRASES = %w( zh aw oo ow oi nk ng wh th sh ch str a e i o u ! % & £ $ )
+	PHRASES = %w( zh aw oo ow oi nk ng wh th sh ch str a e i o u ! % & £ $ 1 2 3 4 5 6 7 8 9 0 )
 
 # Generate takes an input and generates a password of that numetrical value
-
 		def generate(length)
 			result = ''
 
@@ -26,9 +25,7 @@ class Password
 
 
 # Ask the user how many character the password should be.
-
 	def ask	
-
 		puts 'How many characters?'
 		size = gets.chomp.to_i
 		n = Password.new
@@ -39,11 +36,3 @@ end
 
 p = Password.new.ask
 
-
-
-
-#	sec = Password.new
-#
-#	puts " "
-#	puts "Your Password is: " + sec.generate(8)
-#	puts " "
