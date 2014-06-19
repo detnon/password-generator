@@ -31,18 +31,13 @@ class Password
 
 		puts 'How many characters?'
 		size = gets.chomp.to_i
-
-
-		
-		
-
-
+		n = Password.new
+		puts n.generate(size)
 	end
 
 end 
 
-p = Password.new
-p.ask
+p = Password.new.ask
 
 
 
