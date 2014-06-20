@@ -1,7 +1,7 @@
-<!--
+//
 // Password generator
 // By Sam 'phantomofthesoup' Detnon
--->
+//
 <html>
 <head>
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
@@ -11,15 +11,15 @@ var PHRASES =  [ 'z', 'aw', 'oo', 'ow', 'oi', 'nk', 'ng', 'wh', 'th', 'sh', 'ch'
 
 
 var generate = function(length){
-  var result = ''
+	var result = "<p>''</p>"
 
-  while(result.length < length){
-    // random selection over the array
-    var phra = PHRASES[Math.floor(Math.random()*PHRASES.length)]; //(internet copypasta)
-    result += phra
-  }
-    
-  return result;
+	while(result.length < length){
+		// random selection over the array
+		var phra = PHRASES[Math.floor(Math.random()*PHRASES.length)]; //(internet copypasta)
+		result ++ phra
+	}
+		
+	return result;
 }
 
 
@@ -30,6 +30,12 @@ var ask = function(){
 }
 
 
+
+</script>
+
+
+
+<script>
 $(document).ready(function(){
   ask(); 
 });
