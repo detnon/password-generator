@@ -4,17 +4,25 @@
 //
 
 
-var PHRASES =  [ 'z', 'aw', 'oo', 'ow', 'oi', 'nk', 'ng', 'wh', 'th', 'sh', 'ch', 'str', 'a', 'e', 'i', 'o', 'u', '!', '%', '&', '£', '$']
+var PHRASES =  [ 'z', 'aw', 'oo', 'ow', 'oi', 'nk', 'ng', 'wh', 'th', 'sh', 'ch', 'str', 'a', 'e', 'i', 'o', 'u']
 
 
-var generate(length){
+var generate = function(length){
 	var result = ''
 
 	while(result.length < length){
-		// * ADD * random selection over the array
-		//phra = 
-		result ++ phra;
+		// random selection over the array
+		var phra = PHRASES[Math.floor(Math.random()*PHRASES.length)]; //(internet copypasta)
+		result ++ phra
 	}
-		// Add means to make this 
+		
 		return result;
+}
+
+
+var ask = function(){
+  console.log("How many characters?")
+  var size = readline()  
+
+  console.log(generate(size))
 }
