@@ -13,7 +13,8 @@ var generate(length){
 	while(result.length < length){
 		// * ADD * random selection over the array
 		//phra = 
-
+		result ++ phra;
 	}
-
+		// Add means to make this 
+		return result;
 }
