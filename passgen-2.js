@@ -19,7 +19,7 @@ var generate = function(length){
     result += phra
   }
     
-  return result;
+  return '<p>' + result + '</p>' ;
 }
 
 

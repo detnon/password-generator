@@ -27,7 +27,7 @@ class Password
 # Ask the user how many character the password should be.
 	def ask	
 		puts 'How many characters?'
-		size = gets.chomp
+		size = gets.chomp.to_i
 		n = Password.new
 		puts n.generate(size)
 	end
