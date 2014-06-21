@@ -29,7 +29,7 @@ var ask = function(){
   console.log(generate(size))
 }
 
-
+// JQUERY BEGINS HERE \\
 $(document).ready(function(){
   ask(); 
 });
