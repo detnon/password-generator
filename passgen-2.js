@@ -7,6 +7,7 @@ var PHRASES =  [ 'z', 'aw', 'oo', 'ow', 'oi', 'nk', 'ng', 'wh', 'th', 'sh', 'ch'
 
 
 var generate = function(length){
+
   var result = ''
 
   while(result.length < length){
@@ -31,6 +32,8 @@ var generate = function(length){
 
 // JQUERY BEGINS HERE \\
 
+
+//Generate text on page load
 $(document).ready(function(){
   $('#pw').text(generate(8) )
 
