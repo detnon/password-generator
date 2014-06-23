@@ -2,11 +2,7 @@
 // Password generator
 // By Sam 'phantomofthesoup' Detnon
 -->
-<html>
-<head>
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-</head>
-<script>
+
 var PHRASES =  [ 'z', 'aw', 'oo', 'ow', 'oi', 'nk', 'ng', 'wh', 'th', 'sh', 'ch', 'str', 'a', 'e', 'i', 'o', 'u']
 
 
@@ -18,25 +14,25 @@ var generate = function(length){
     var phra = PHRASES[Math.floor(Math.random()*PHRASES.length)]; //(internet copypasta)
     result += phra
   }
-    
-  return '<p>' + result + '</p>' ;
+  
+  result = result.toString();
+
+  return result 
 }
 
 
-var ask = function(){
-  var size = prompt("How many Characters?")  
+//var ask = function(){
+ // var size = prompt("How many Characters?")  
 
-  console.log(generate(size))
-}
+  //generate(8)
+
+//} THIS HAS BEEN COMMENTED OUT, INPUT MIGHT BE HANDLED DIFFERENTLY LATER.
+
 
 // JQUERY BEGINS HERE \\
+
 $(document).ready(function(){
-  ask(); 
+  $('#pw').text(generate(8) )
+
 });
-
-</script>
-
-
-</html>
-
 
