@@ -3,7 +3,7 @@
 
   "name": "LittleP Password Generator",
   "description": "Create a password!",
-  "version": "1.0.4",
+  "version": "1.0.5",
 
   "permissions": [ 
   "tabs", "https://*/*", "http://*/*"
