@@ -16,7 +16,12 @@ a{
   color:inherit;
   font-size: 13px;
   margin: 0px;
- 
+}
+
+
+#pass-length{
+  width: 25px;
+  margin-left: 8px
 }
 
 #container{

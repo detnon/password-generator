@@ -1,9 +1,9 @@
    {
   "manifest_version": 2,
 
-  "name": "LittleP Password Generator - DEV",
+  "name": "LittleP Password Generator - Dev ",
   "description": "Create a password!",
-  "version": "1.0.5",
+  "version": "1.0.6",
 
   "permissions": [ 
   "tabs", "https://*/*", "http://*/*"

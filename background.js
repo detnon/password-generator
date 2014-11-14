@@ -6,8 +6,6 @@ var getStrings = function(){
     PHRASES = data.split(' ');
     $('#pw').text(generate(8))
     console.log(data);
-    
-
   })
 }
 
