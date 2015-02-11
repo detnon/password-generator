@@ -5,7 +5,6 @@ var getStrings = function(){
   $.get('strings.txt', function(data){
     PHRASES = data.split(' ');
     $('#pw').text(generate(8))
-    console.log(data);
   })
 }
 
@@ -39,6 +38,12 @@ $(document).ready(function(){
   $('#form-id').submit(function(e){ 
   e.preventDefault(); 
   var length = $("#pass-length").val();
+  $('#pw').text(generate(length));
+ });
+
+    $('#form-id2').submit(function(e){ 
+  e.preventDefault(); 
+  var length = (8);
   $('#pw').text(generate(length));
  });
 
